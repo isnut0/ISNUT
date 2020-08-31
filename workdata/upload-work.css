@@ -1,0 +1,161 @@
+/*(기존) #CFDAFF #5874FF #233487
+f9f1e9 ~거의 흰+베이지 조금
+daeff5 ~흰+하늘
+92e1f5 ~하늘
+0d90ae ~파랑
+b1b0cd ~보라
+f4e5e8 ~거의 흰+분홍 조금
+*/
+@font-face {
+font-family: 'SDKukdetopokki-bDb';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'SDKukdetopokki-Lt';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'MapoFlowerIsland';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Chosunilbo_myungjo';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'NEXON Lv2 Gothic Bold';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'NEXON Lv1 Gothic OTF';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'IBMPlexSansKR-Light';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Light.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'GmarketSansLight';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'S-CoreDream-9Black';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {  /*당첨*/
+font-family: 'NIXGONM-Vb';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'GmarketSansBold';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+
+@font-face {
+font-family: 'Arita-buri-SemiBold';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* menu */
+nav{
+  border-bottom: 1px solid #233487;
+}
+.menu ul{
+  list-style-type: none;
+  margin-top: 20px;
+  padding-left: 0;
+  overflow: hidden;
+}
+.menu li {
+  float: left;
+}
+.menu_list{
+  color: black;
+  padding-left: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+.menu_title{
+  font-family: 'SDKukdetopokki-bDb';
+  font-size: 60px;
+  color: red;
+  padding: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*title*/
+.title{
+ font-size: 100px;
+ text-align: center;
+ font-family: 'SDKukdetopokki-bDb';
+ background-image: url("");
+ background-size:  cover;
+ background-repeat: no-repeat;
+}
+
+/*content*/
+.upload_content{
+  margin: 10px 20% 75px 20%;
+}
+table{
+  text-align: center;
+  margin: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+td{
+  float: left;
+}
+.video_category, .video_title, .video_maker, .video_intent, .video{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.video_title input,.video_maker input, .video input{
+  width: 800px;
+}
+.video_intent textarea{
+  width: 800px;
+}
+#register, #cancle{
+  position: relative;
+  left: 800px;
+}
