@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> ISNUT | ABOUT </title>
+    <link rel="stylesheet" href="css\main.css" type="text/css">
+      <link rel="stylesheet" href="css\about.css" type="text/css">
+    <meta name="keywords" contents="영상, 영상제작, 동아리, 이즈넛, ISNUT, isnut"/>
+    <meta name="description" content="ISNUT in SEOUL NATIONAL UNIVERSITY OF SCIENCE AND TECHNOLOGY"/>
+    <meta name="copyright" content="JIWON ENYOUNG HAEJUNG"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta http-equiv="refresh" content="30"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        'use strict';
+
+        // define variables
+        var items = document.querySelectorAll(".timeline li");
+
+        // check if an element is in viewport
+        // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+        function isElementInViewport(el) {
+          var rect = el.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+
+        function callbackFunc() {
+          for (var i = 0; i < items.length; i++) {
+            if (isElementInViewport(items[i])) {
+              items[i].classList.add("in-view");
+            }
+          }
+        }
+
+        // listen for events
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+
+      })();
+    </script>
+  </head>
+
+
+  <body>
+    <div class = "wrapper">
+      <nav class="menu" style = "padding: 3%">
+        <div><a href="../main/main.html" class="menu_title">ISNUT</a></div>
+      </nav>
+      <input type="checkbox" id="menuicon">
+      <label for="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="sidebar">
+         <a href=about.html> <span class="a"> ABOUT </span> </a>
+         <a href=work.html> <span class="b"> WORK </span> </a>
+         <a href=news.html> <span class="c"> NEWS </span> </a>
+         <a href=people.html> <span class="d"> PEOPLE </span> </a>
+      </div>
+
+      <div>
+        <video autoplay muted loop id="myVideo">
+          <source src="..\source\main\ex.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <article>
+        <div class="title-design">
+          <h1 class = title>ABOUT</h1>
+        </div>
+
+        <div class="introduction" style = "margin: 2%; margin-top:5%;">
+          <section class="slider" id="category">
+            <span>
+              <h2>ISNUT</h2>
+            </span>
+            <span>
+              <img src="source\about\PngItem_2318311.png">
+            </span>
+            <span>
+          		<div class="slider_info">
+          			<p class="font-en" style = "font-size: 30px;">
+                  ISNUT is an organization that lets members remember precious moments through video and seeks out the value of college life.
+                </p>
+          			<p style = "font-size: 21.5px;">이즈넛은 영상을 통해 소중한 순간을 기록하고, 대학 생활의 가치를 찾아가는 단체입니다.</p>
+          		</div>
+            </span>
+        	</section>
+          <img id="introduction-pic" src="source\about\isnut_all.jpg" alt="이즈넛 단체사진">
+        </div>
+
+        <div class="content">
+          <section class="activity" style="margin: 8% 2% 0 2%;">
+                <div class="text"  style="margin-bottom: 5%">
+                  <h2>Activity</h2>
+                </div>
+                <span class="wrap_scroll">
+                  <div class="plan">
+                    <img src="source\about\plan.png">
+                    <img id="act_img1" src="source\about\ex.jpg">
+                    <p>구상 때 나왔던 여러가지 아이디어를 묶고 다듬는 과정입니다.</p>
+                  </div>
+                  <div class="film" >
+                    <img src="source\about\film.png">
+                    <img id="act_img2" src="source\about\ex.jpg">
+                    <p>촬영을 통해 기획한 내용을 실체화합니다.</p>
+                  </div>
+                  <div class="edit">
+                    <img src="source\about\edit.png">
+                    <img id="act_img3" src="source\about\ex.jpg">
+                    <p>다양한 연출과 편집 기법을 통해 예술적 감각을 익힙니다.</p>
+                  </div>
+                  <div class="play">
+                    <img src="source\about\play.png">
+                    <img id="act_img4" src="source\about\ex.jpg">
+                    <p>경험을 통해 새로운 에너지와 인사이트를 얻어 시야를 넓힙니다.</p>
+                  </div>
+                </span>
+          </section>
+          <section class="brand_videos" style = "margin-top:8%;">
+            <div class="text">
+              <h2>홍보 영상</h2>
+            </div>
+            <div class="wrap_slide">
+              <div class="item_01">
+                <a class="play_video" href="">
+                  <em class="tit_video">[카카오뱅크 TV-CF] 광고 볼 시간에</em>
+                  <img alt="은행 상담편" class="thumb_video" src="source\about\ex.jpg">
+                  <!-- <span class="img_kabang ico_play">동영상 플레이</span> -->
+                </a>
+                <strong class="tit_info"># 은행 상담편<br></strong>
+                <span class="desc_info">
+                  광고 볼 시간에. 카카오뱅크 은행 상담<br>
+                  언제 어디서나 카톡으로 은행 상담
+                </span>
+             </div>
+
+
+             <div class="item_02">
+               <a class="play_video" href="">
+                 <em class="tit_video">[카카오뱅크 TV-CF] 광고 볼 시간에</em>
+                 <img alt="은행 상담편" class="thumb_video" src="source\about\ex.jpg">
+                 <!-- <span class="img_kabang ico_play">동영상 플레이</span> -->
+               </a>
+
+               <strong class="tit_info" ># 은행 상담편<br></strong>
+               <span class="desc_info" >
+                 광고 볼 시간에. 카카오뱅크 은행 상담<br>
+                 언제 어디서나 카톡으로 은행 상담
+               </span>
+            </div>
+            <div class="item_03">
+              <a class="play_video" href="">
+                <em class="tit_video">[카카오뱅크 TV-CF] 광고 볼 시간에</em>
+                <img alt="은행 상담편" class="thumb_video" src="source\about\ex.jpg">
+                <!-- <span class="img_kabang ico_play" style="position: relative;">동영상 플레이</span> -->
+              </a>
+
+              <strong class="tit_info"># 은행 상담편</strong>
+              <span class="desc_info">
+                광고 볼 시간에. 카카오뱅크 은행 상담<br>
+                언제 어디서나 카톡으로 은행 상담
+              </span>
+           </div>
+            </div>
+          </section>
+          <section class="BI" style = "margin-top: 8%">
+            <div class="text">
+              <h2>BI 소개</h2>
+            </div>
+            <div class="brand_bi" style="position: relative;">
+              <img alt="ISNUT_BI" class="BI_img" src="source\about\BIpng.png" style="width: 90%; margin: 0 5% 0 5%;">
+              <span style="display: block; font-size: 30px; text-align: center; margin-bottom: 10%;">
+                순간을 담아내는 <strong>조리개</strong>를 형상화한 이즈넛만의 심볼</span>
+            </div>
+          </section>
+          <section class="history" style = "margin-top: 8%">
+              <div class="text">
+                <h2 style = "margin-bottom: 60px;">History</h2>
+              </div>
+              <div>
+                <div class="bg">
+                <video autoplay muted loop class="gradient">
+                  <source src="source\about\realgradient.mp4" type="video/mp4">
+                  </video>
+                <div class="timeline">
+                  <ul>
+                    <li>
+                      <div>
+                        <time>2000</time>ISNUT 창립
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <time>2002</time>ISNUT 네이트 클럽 개설
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <time>2014</time>ISNUT 네이버 카페 개설<br>위더스 활동 시작
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <time>2016</time>'치노시오야 공모전' 수상
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <time>2017</time>ISNUT 어워드 개최<br>'순둥이 공모전' 수상
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <time>2018</time>'서울과학기술대학교 홍보 UCC' 최우수상 수상
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <time>2020</time>ISNUT 포트폴리오 페이지 <br>개설
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <time style="font-size: 3.5rem; color: white; font-family: 'GmarketSansBold';"><I>What's next?</I></time>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+          </section>
+        </div>
+      </div>
+
+      <footer>
+        <div id="footer" class="footer">
+          <div class="footer-area">
+              <ul class="isnut-sns">
+                <li><a href="https://www.facebook.com/snut.i.7/about" target="blank"> <img style="width: 5%;" alt="facebook" src="source\fb.png"></a></li>
+                <li><a href="https://cafe.naver.com/isnut" target="blank"> <img alt="Naver" src="source\blog.png" style="width:5%;"></a></li>
+                <li><a href="http://isnut.cyworld.com" target="blank"> <img alt="Nate" src="source\nate.png" style="width:5%;"></a></li>
+                <li><a href="https://www.youtube.com/" target="blank"> <img alt="Youtube" src="source\youtube.png" style="width:5%;"></a></li>
+              </ul>
+              <ul class="list-line">
+                <li>E-mail : 국장/부국장 메일</li>
+                <li>@Site by JW EY HJ</li>
+                <br>
+              </ul>
+              <!-- <a href="#" class="page-top" style="display: block;">Top</a> -->
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script type="text/javascript">
+      //연혁 스크롤 동작
+      (function() {
+        'use strict';
+
+        // define variables
+        var items = document.querySelectorAll(".timeline li");
+
+        // check if an element is in viewport
+        // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+        function isElementInViewport(el) {
+          var rect = el.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+
+        function callbackFunc() {
+          for (var i = 0; i < items.length; i++) {
+            if (isElementInViewport(items[i])) {
+              items[i].classList.add("in-view");
+            }
+          }
+        }
+
+        // listen for events
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+
+      })();
+
+      $(document).ready(function() {
+         $(window).scroll( function(){
+           $('.plan img, .film img, .edit img, .play img, .wrap_scroll p').each( function(i){
+
+             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+             var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+             if( bottom_of_window > bottom_of_element ){
+               $(this).animate({'opacity':'1','top':'0px'},1000);
+             }
+
+           });
+         });
+       });
+    </script>
+      </article>
+    </div>
+  </body>
+</html>

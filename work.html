@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ISNUT | WORK</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script type="text/javascript">
+      function pagechange(pagenumber, name){
+        fetch('workdata/01/page'+pagenumber+'.html').then(function(response){
+            response.text().then(function(text){
+              document.querySelector('article').innerHTML = text;
+            })
+        });
+        $("li").removeClass("active");
+        $(name).addClass("active");
+      }
+
+      function classchange(name){
+        $("a").removeClass("active_a");
+        $(name).addClass("active_a");
+      }
+
+      function pagination(departname){
+        switch (departname) {
+          case 1 :
+          document.getElementById("pagination_1").style.display ='';
+          document.getElementById("pagination_2").style.display ='none';
+          break;
+          case 11 :
+          document.getElementById("pagination_1").style.display ='none';
+          document.getElementById("pagination_2").style.display ='';
+          break;
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="css\work.css" type="text/css">
+    <link rel="stylesheet" href="css\main.css" type="text/css">
+  </head>
+
+  <body>
+    <nav class="menu" style = "padding: 3%">
+      <div><a href="main.html" class="menu_title">ISNUT</a></div>
+    </nav>
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <div class="sidebar">
+       <a href=about.html> <span class="a"> ABOUT </span> </a>
+       <a href=work.html> <span class="b"> WORK </span> </a>
+       <a href=news.html> <span class="c"> NEWS </span> </a>
+       <a href=people.html> <span class="d"> PEOPLE </span> </a>
+    </div>
+
+    <div class="title-design">
+      <h1 class = title>WORK</h1>
+    </div>
+
+    <section class="work_page" style="margin-top: 5%;">
+      <div class = "top_button">
+          <ul>
+            <li><a href="work.html" class="active_a" onclick="classchange(this)">영상제</a></li>
+            <li><a href="award.html" onclick="classchange(this)">공모전</a></li>
+            <li><a href="video.html" onclick="classchange(this)">자유영상</a></li>
+            <li><a href="assign.html" onclick="classchange(this)">과제</a></li>
+          </ul>
+      </div>
+
+      <article style="margin: 5%;">
+        <script>
+          fetch('workdata/01/page1.html').then(function(response){
+              response.text().then(function(text){
+                document.querySelector('article').innerHTML = text;
+              })
+          });
+        </script>
+      </article>
+      <div class="pagination">
+        <ul>
+          <li pagenumber="0" class="arrow-btn cursor-n">
+          <i class="icon-page-left2"></i></li>
+
+          <ul id=pagination_1 style="display:'';">
+            <li pagenumber="0" class="arrow-btn cursor-n">pre</li>
+            <li pagenumber="1" class = "active" onclick = "pagechange(1,this);">1</li>
+            <li pagenumber="2" onclick = "pagechange(2, this);">2</li>
+            <li pagenumber="3" onclick = "pagechange(3, this);">3</li>
+            <li pagenumber="4" onclick = "pagechange(4, this);">4</li>
+            <li pagenumber="5" onclick = "pagechange(5, this);">5</li>
+            <li pagenumber="6" onclick = "pagechange(6, this);">6</li>
+            <li pagenumber="7" onclick = "pagechange(7, this);">7</li>
+            <li pagenumber="8" onclick = "pagechange(8, this);">8</li>
+            <li pagenumber="9" onclick = "pagechange(9, this);">9</li>
+            <li pagenumber="10" onclick = "pagechange(10, this);">10</li>
+            <li pagenumber="11" onclick="pagination(11);">next
+            </li>
+          </ul>
+
+          <ul id=pagination_2 style="display:none;">
+            <li pagenumber="10" onclick="pagination(1);">pre</li>
+            <li pagenumber="11" class = "active" onclick = "pagechange(11, this);">11</li>
+            <li pagenumber="12" onclick = "pagechange(12, this);">12</li>
+            <li pagenumber="13" onclick = "pagechange(13, this);">13</li>
+            <li pagenumber="14" onclick = "pagechange(14, this);">14</li>
+            <li pagenumber="15" onclick = "pagechange(15, this);">15</li>
+            <li pagenumber="16" onclick = "pagechange(16, this);">16</li>
+            <li pagenumber="17" onclick = "pagechange(17, this);">17</li>
+            <li pagenumber="18" onclick = "pagechange(18, this);">18</li>
+            <li pagenumber="19" onclick = "pagechange(19, this);">19</li>
+            <li pagenumber="20" onclick = "pagechange(20, this);">20</li>
+            <li pagenumber="21" class="arrow-btn cursor-n" onclick="pagination(21);">next</li>
+          </ul>
+
+          <li pagenumber="116" class="arrow-btn">
+          <i class="icon-page-right2"></i></li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div id="footer" class="footer">
+        <div class="footer-area">
+            <ul class="isnut-sns">
+              <li><a href="https://www.facebook.com/snut.i.7/about" target="blank"> <img alt="facebook" src="source\fb.png" style="width:5%;"></a></li>
+              <li><a href="https://cafe.naver.com/isnut" target="blank"> <img alt="Naver" src="source\blog.png" style="width:5%;"></a></li>
+              <li><a href="http://isnut.cyworld.com" target="blank"> <img alt="Nate" src="source\nate.png" style="width:5%;"></a></li>
+              <li><a href="https://www.youtube.com/" target="blank"> <img alt="Youtube" src="source\youtube.png" style="width:5%;"></a></li>
+            </ul>
+            <ul class="list-line">
+              <li>E-mail : 국장/부국장 메일</li>
+              <li>Site by 김지원 유은영 정해정</li>
+            </ul>
+            <!-- <a href="#" class="page-top" style="display: block;">Top</a> -->
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

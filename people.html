@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Isnut-people</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="css\people.css" type="text/css">
+    <link rel="stylesheet" href="css\main.css" type="text/css">
+    <script type="text/javascript">
+      function classchange(name){
+        $("input").removeClass("active");
+        $(name).addClass("active");
+      }
+      function fn_searchGroup(departname){
+        switch (departname) {
+          case 0 :
+          document.getElementById("임원진").style.display ='';
+          document.getElementById("사무부").style.display ='none';
+          document.getElementById("기획부").style.display ='none';
+          document.getElementById("웹부").style.display ='none';
+          document.getElementById("교육부").style.display ='none';
+          document.getElementById("홍보부").style.display ='none';
+          document.getElementById("운영부").style.display ='none';
+          break;
+          case 1 :
+          document.getElementById("임원진").style.display ='none';
+          document.getElementById("사무부").style.display ='';
+          document.getElementById("기획부").style.display ='none';
+          document.getElementById("웹부").style.display ='none';
+          document.getElementById("교육부").style.display ='none';
+          document.getElementById("홍보부").style.display ='none';
+          document.getElementById("운영부").style.display ='none';
+          break;
+          case 2 :
+          document.getElementById("임원진").style.display ='none';
+          document.getElementById("사무부").style.display ='none';
+          document.getElementById("기획부").style.display ='';
+          document.getElementById("웹부").style.display ='none';
+          document.getElementById("교육부").style.display ='none';
+          document.getElementById("홍보부").style.display ='none';
+          document.getElementById("운영부").style.display ='none';
+          break;
+          case 3 :
+          document.getElementById("임원진").style.display ='none';
+          document.getElementById("사무부").style.display ='none';
+          document.getElementById("기획부").style.display ='none';
+          document.getElementById("웹부").style.display ='';
+          document.getElementById("교육부").style.display ='none';
+          document.getElementById("홍보부").style.display ='none';
+          document.getElementById("운영부").style.display ='none';
+          break;
+          case 4 :
+          document.getElementById("임원진").style.display ='none';
+          document.getElementById("사무부").style.display ='none';
+          document.getElementById("기획부").style.display ='none';
+          document.getElementById("웹부").style.display ='none';
+          document.getElementById("교육부").style.display ='';
+          document.getElementById("홍보부").style.display ='none';
+          document.getElementById("운영부").style.display ='none';
+          break;
+          case 5 :
+          document.getElementById("임원진").style.display ='none';
+          document.getElementById("사무부").style.display ='none';
+          document.getElementById("기획부").style.display ='none';
+          document.getElementById("웹부").style.display ='none';
+          document.getElementById("교육부").style.display ='none';
+          document.getElementById("홍보부").style.display ='';
+          document.getElementById("운영부").style.display ='none';
+          break;
+          case 6 :
+          document.getElementById("임원진").style.display ='none';
+          document.getElementById("사무부").style.display ='none';
+          document.getElementById("기획부").style.display ='none';
+          document.getElementById("웹부").style.display ='none';
+          document.getElementById("교육부").style.display ='none';
+          document.getElementById("홍보부").style.display ='none';
+          document.getElementById("운영부").style.display ='';
+          break;
+        }
+      }
+    </script>
+
+  </head>
+
+  <body>
+    <nav class="menu" style = "padding: 3%">
+      <div><a href="main.html" class="menu_title">ISNUT</a></div>
+    </nav>
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <div class="sidebar">
+       <a href=about.html> <span class="a"> ABOUT </span> </a>
+       <a href=work.html> <span class="b"> WORK </span> </a>
+       <a href=news.html> <span class="c"> NEWS </span> </a>
+       <a href=people.html> <span class="d"> PEOPLE </span> </a>
+    </div>
+
+    <div class="title-design" style="position: relative;">
+      <h1 class = title style="position: relative;">PEOPLE</h1>
+      <img src="source\people\blue_circle2.png" style="width:70px; position: absolute; transform: translate(1380%, 30%); top:0; left:0;">
+    </div>
+
+    <div class="content">
+      <section class="depart_name" style="margin:5%">
+        <div class="name">
+          <input class="active" type="button" value="임원진" onclick="classchange(this); fn_searchGroup(0);">
+          <input type="button" value="사무부" onclick="classchange(this); fn_searchGroup(1);">
+          <input type="button" value="기획부" onclick="classchange(this); fn_searchGroup(2);">
+          <input type="button" value="웹부" onclick="classchange(this); fn_searchGroup(3);">
+          <input type="button" value="교육부" onclick="classchange(this); fn_searchGroup(4);">
+          <input type="button" value="홍보부" onclick="classchange(this); fn_searchGroup(5);">
+          <input type="button" value="운영부" onclick="classchange(this); fn_searchGroup(6);">
+        </div>
+
+        <div class="underline"></div>
+
+        <div id="임원진" style = "display: ">
+          <span>
+          		<div class="wrap-img">
+          				<div class="img">
+          					<img src="source\people\it'sme.jpg" alt="이즈넛">
+          				</div>
+          		</div>
+          		<p class="tit">유은영</p>
+          		<p class="txt">이즈넛 18기</p>
+          		<p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+           		<div class="wrap-img">
+          				<div class="img">
+          					<img src="source\people\it'sme.jpg" alt="이즈넛">
+          				</div>
+          		</div>
+          		<p class="tit">유은영</p>
+          		<p class="txt">이즈넛 18기</p>
+          		<p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+          		<div class="wrap-img">
+          				<div class="img">
+          					<img src="source\people\it'sme.jpg" alt="이즈넛">
+          				</div>
+          		</div>
+          		<p class="tit">유은영</p>
+          		<p class="txt">이즈넛 18기</p>
+          		<p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+          		<div class="wrap-img">
+          				<div class="img">
+          					<img src="source\people\it'sme.jpg" alt="이즈넛">
+          				</div>
+          		</div>
+          		<p class="tit">유은영</p>
+          		<p class="txt">이즈넛 18기</p>
+          		<p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+        </div>
+        <div id="사무부" style = "display: none;">
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+        </div>
+        <div id="기획부" style = "display: none;">
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+        </div>
+        <div id="웹부" style = "display: none;">
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+        </div>
+        <div id="교육부" style = "display: none;">
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+        </div>
+        <div id="홍보부" style = "display: none;">
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+        </div>
+        <div id="운영부" style = "display: none;">
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+          <span>
+              <div class="wrap-img">
+                  <div class="img">
+                    <img src="source\people\it'sme.jpg" alt="이즈넛">
+                  </div>
+              </div>
+              <p class="tit">유은영</p>
+              <p class="txt">이즈넛 18기</p>
+              <p class="comment">무슨 말을 더 써야하지..?</p>
+          </span>
+        </div>
+
+      </section>
+      <section class="passed" style="margin:5%;">
+        <div class="text">
+          <h2>지나간 사람들</h2>
+        </div>
+
+        <div class="underline"></div>
+
+        <div id="grave" style="overflow-x:scroll;">
+          <span class="grave_space">
+            <div class="grave-img">
+              <img src="source\people\2019_grave.png" alt="2019">
+            </div>
+            <p class="grave_comment" style="display: grid; grid-template-columns: 0.15fr 0.85fr;">
+              <span><strong>15기<br>16기<br><br>17기<br>18기</strong></span>
+              <span>김태호 천승준<br>김규환 김진우 손병욱 이재희 정현우 조영준 함택호<br>김유정 오수경<br>
+                강시현 구본석 김수빈 김은주 김윤희 김지원 남선우 유은영 이은미 이중찬 이훈주 장예지 정해정</span>
+            </p>
+            </p>
+          </span>
+          <span class="grave_space">
+            <div class="grave-img">
+              <img src="source\people\2018_grave.png" alt="2018">
+            </div>
+            <p class="grave_comment" style="display: grid; grid-template-columns: 0.15fr 0.85fr;">
+              <span><strong>15기<br><br> 16기<br> 17기</strong></span>
+              <span>김상우 김원준 김재완 박찬우 윤정호 이재민 이준혁<br>권용민<br>김다혜 김유진 김주현 박지은 이지은 정채영 정현 지원근 최서영</span>
+            </p>
+            </span>
+          </span>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div id="footer" class="footer">
+        <div class="footer-area">
+            <ul class="isnut-sns">
+              <li><a href="https://www.facebook.com/snut.i.7/about" target="blank"> <img alt="facebook" src="source\fb.png" style="width:5%;"></a></li>
+              <li><a href="https://cafe.naver.com/isnut" target="blank"> <img alt="Naver" src="source\blog.png" style="width:5%;"></a></li>
+              <li><a href="http://isnut.cyworld.com" target="blank"> <img alt="Nate" src="source\nate.png" style="width:5%;"></a></li>
+              <li><a href="https://www.youtube.com/" target="blank"> <img alt="Youtube" src="source\youtube.png" style="width:5%;"></a></li>
+            </ul>
+            <ul class="list-line">
+              <li>E-mail : 국장/부국장 메일</li>
+              <li>Site by 김지원 유은영 정해정</li>
+            </ul>
+            <!-- <a href="#" class="page-top" style="display: block;">Top</a> -->
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

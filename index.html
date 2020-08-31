@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<style>
+		body {
+				background:black;
+		}
+		/* div { position: absolute;
+					text-align: center;
+					left: 50%;
+					top: 50%;
+					margin: -91px auto 0 -161px; /* value of top margin: height of the image divide by 2 (ie: 182 / 2), value of left margin: width of the image divide by 2 (ie: 322 / 2) */
+					/* width: 322px; /* same as the image width */
+				/* } */
+		#image { filter:blur(30px);
+		-webkit-filter:blur(30px);
+		transition-duration: 1.5s;
+		transition-timing-function: ease;
+		}
+		#image:hover{filter:blur(0px);
+		-webkit-filter:blur(0px);
+		}
+		/* 블러처리, 블러 트렌지션 지속시간, 속도 */
+		</style>
+		<!-- 배경을 검정색으로, 이미지 블러처리, 마우스 대면 블러뺌 -->
+
+  </head>
+
+  <body>
+  	<div id="image" style="position: absolute;
+					text-align: center;
+					left: 50%;
+					top: 50%;
+					margin: -91px auto 0 -161px; /* value of top margin: height of the image divide by 2 (ie: 182 / 2), value of left margin: width of the image divide by 2 (ie: 322 / 2) */
+					width: 322px;
+          z-index: 1;/* same as the image width */">
+      <a href=main.html>
+        <img src="source\index\intro_isnut.png" align = "center">
+      </a>
+		</div>
+		<!--이즈넛 이미지, 가운데정렬 -->
+    <div style="position:absolute;
+    text-align:center;
+    left: 50%;
+    top: 50%;
+    margin: -540px auto 0 -960px;
+    width:1920px;
+    z-index:0;">
+    <img src="source\index\viewfinder.png" align="center">
+  </body>
+</html>
