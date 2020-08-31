@@ -1,0 +1,239 @@
+/*색 #CFDAFF #5874FF #233487*/
+@font-face {
+font-family: 'SDKukdetopokki-bDb';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'SDKukdetopokki-Lt';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'MapoFlowerIsland';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Chosunilbo_myungjo';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'NEXON Lv2 Gothic Bold';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'NEXON Lv1 Gothic OTF';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'IBMPlexSansKR-Light';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Light.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'GmarketSansLight';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'S-CoreDream-9Black';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {  /*당첨*/
+font-family: 'NIXGONM-Vb';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'GmarketSansBold';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+
+@font-face {
+font-family: 'Arita-buri-SemiBold';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+ html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+ }
+
+/* menu */
+ nav{
+  border-bottom: 1px solid #233487;
+ }
+ .menu ul{
+  list-style-type: none;
+  margin-top: 20px;
+  padding-left: 0;
+  overflow: hidden;
+ }
+ .menu li {
+  float: left;
+ }
+ .menu_list{
+  color: black;
+  padding-left: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+ }
+ .menu_title{
+  font-family: 'SDKukdetopokki-bDb';
+  font-size: 60px;
+  color: red;
+  padding: 16px;
+  text-decoration: none;
+  font-weight: bold;
+ }
+ .title{
+  font-size: 100px;
+  text-align: center;
+  font-family: 'SDKukdetopokki-bDb';
+  background-image: url("");
+  background-size:  cover;
+	background-repeat: no-repeat;
+ }
+
+
+/* 부서별img */
+ .name {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-right: 35%;
+  margin-top: 30px;
+ }
+ input{
+  background-color: white;
+  border-radius: 15%;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+  font-family: 'GmarketSansLight';
+  font-style: normal;
+ }
+ .active{
+  font-weight: bold;
+  background-color:orange;
+ }
+ .underline{
+  padding: 20px;
+  border-bottom: 1px gray solid;
+ }
+
+ #임원진, #사무부, #웹부, #운영부, #교육부, #기획부, #홍보부 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 50px;
+  margin-bottom: 80px;
+ }
+ #임원진 img, #사무부 img, #웹부 img, #운영부 img, #교육부 img, #기획부 img, #홍보부 img{
+  border-radius: 80%;
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+ }
+.tit{
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-family: 'GmarketSansBold';
+ }
+.txt{
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+  font-family: 'GmarketSansLight';
+ }
+.comment{
+  text-align: center;
+  color: gray;
+  font-size: 20px;
+  font-family: 'Chosunilbo_myungjo';
+ }
+
+/* 비활동기수 */
+.text h2{
+  font-family: 'GmarketSansLight';
+  position: relative;
+  font-size: 40px;
+  font-style: normal;
+  padding:0;
+  margin:0 0 0 10px ;
+ }
+ .grave_space{
+   margin: 30px;
+ }
+ #grave{
+  display: grid;
+  grid-template-columns: 350px 350px;
+  margin-top: 50px;
+ }
+ #grave img{
+  padding-bottom: 10%;
+  width: 100%;
+ }
+ #grave::-webkit-scrollbar {
+   width: 0px;
+ }
+ /* time{
+   font-family: 'Black Han Sans', sans-serif;
+   font-size: 45px;
+   margin-left: 32%;
+   font-style: normal;
+ } */
+ .grave_comment{
+   padding-left: 3%;
+   color: gray;
+   font-size: 125%;
+   font-family: 'Chosunilbo_myungjo';
+   line-height: 140%;
+ }
+
+/* footer */
+ #footer{
+   border-top: 1px solid gray;
+   font-family: 'NEXON Lv1 Gothic OTF';
+   padding: 20px;
+ }
+ #footer .list-line{
+    font-size: 18px;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 40px;
+ }
+  #footer .isnut-sns{
+   list-style-type: none;
+   text-align: right;
+ }
+ #footer .isnut-sns li{
+   display: inline;
+ }

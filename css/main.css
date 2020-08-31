@@ -1,0 +1,270 @@
+      @font-face {
+      font-family: 'SDKukdetopokki-bDb';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      @font-face {
+      font-family: 'SDKukdetopokki-Lt';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+
+      @font-face {
+      font-family: 'MapoFlowerIsland';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      @font-face {
+      font-family: 'Chosunilbo_myungjo';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      @font-face {
+      font-family: 'NEXON Lv2 Gothic Bold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      @font-face {
+      font-family: 'NEXON Lv1 Gothic OTF';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      @font-face {
+      font-family: 'IBMPlexSansKR-Light';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Light.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      @font-face {
+      font-family: 'GmarketSansLight';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      @font-face {
+      font-family: 'S-CoreDream-9Black';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      @font-face {  /*당첨*/
+      font-family: 'NIXGONM-Vb';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      @font-face {
+      font-family: 'GmarketSansBold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+
+      @font-face {
+      font-family: 'Arita-buri-SemiBold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+
+      input[id="menuicon"] {display:none;}
+
+      input[id="menuicon"]+label{
+        display:block;
+        margin:15px;
+        width:30px;
+        height:25px;
+        position:fixed;
+        top: 50px;
+	      left: 93%;
+        cursor:pointer;}
+
+      input[id="menuicon"] + label span{
+        display:block;
+        position:absolute;
+        width:100%;
+        height:2px;
+        border-radius:40px;
+        background:#000;
+        transition:all .35s;}
+
+
+      input[id="menuicon"]+label span:nth-child(1){
+        top:0;}
+      input[id="menuicon"]+label span:nth-child(2){
+        top:47%;
+        transition:translateY(-50%);}
+      input[id="menuicon"]+label span:nth-child(3){
+        bottom:0;}
+
+      input[id="menuicon"]:checked + label{
+          z-index:2;}
+      input[id="menuicon"]:checked + label span {
+          background:#fff;}
+
+      input[id="menuicon"]:checked+label span:nth-child(1){
+        top:50%;
+        transform:translateY(-50%) rotate(45deg);}
+      input[id="menuicon"]:checked+label span:nth-child(2){
+        opacity:0;}
+      input[id="menuicon"]:checked+label span:nth-child(3){
+        bottom:50%;
+        transform: translateY(50%) rotate(-45deg);}
+
+
+      div[class="sidebar"]{
+        width:100%;
+        height:1080px;
+        background:#233487;
+        position: fixed;
+        top:-1080px;
+        left:0;
+        z-index:1;
+        transition:all.35s;
+        opacity:99%
+        }
+
+      input[id="menuicon"]:checked+label+div{
+        top:0;}
+
+       /* 여기까지가 위에서 내려오는 배너 코딩 */
+
+
+      .a{
+        color: white;
+        text-decoration: underline;
+        top:120px;
+        position:absolute;
+        left:30%;
+        font-size: 45px;
+      }
+
+      .b{
+        color: white;
+        text-decoration: underline;
+        top:120px;
+        position:absolute;
+        left:45%;
+        font-size: 45px;
+      }
+
+      .c{
+        color: white;
+        text-decoration: underline;
+        top:120px;
+        position:absolute;
+        left:60%;
+        font-size: 45px;
+      }
+
+      .d{
+        color: white;
+        text-decoration: underline;
+        top:120px;
+        position:absolute;
+        left:75%;
+        font-size: 45px;
+      }
+
+      /* 사이드바 글씨 꾸미기.. 꾸미고는 싶은데요..................왜 안되나요..... */
+
+      .a:hover{
+      color: #F4D03F;
+      }
+
+      .b:hover{
+      color: #F4D03F;
+      }
+
+      .c:hover{
+      color: #F4D03F;
+      }
+
+      .d:hover{
+      color: #F4D03F;
+      }
+
+      /* 사이드바 글씨 오버 효과 */
+
+      #myVideo {
+        position:relative;
+        z-index:-1;
+        top:0px;
+        left:0px;
+        width: 100%;
+      }
+
+        /* 메인페이지 영상 위치, 크기 */
+
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+          }
+
+          /* menu */
+          nav{
+            border-bottom: 1px solid #233487;
+          }
+          .menu ul{
+            list-style-type: none;
+            margin-top: 20px;
+            padding-left: 0;
+            overflow: hidden;
+          }
+          .menu li {
+            float: left;
+          }
+          .menu_list{
+            color: black;
+            padding-left: 16px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+          }
+          .menu_title{
+            font-family: 'SDKukdetopokki-bDb';
+            font-size: 60px;
+            color: red;
+            padding: 16px;
+            text-decoration: none;
+            font-weight: bold;
+          }
+
+          /* footer */
+          footer{
+            position: relative;
+            transform: translateY(0%);
+          }
+          .wrapper{
+            height: auto;
+            min-height: 100%;
+            padding-bottom: 182px;
+            margin-bottom: 1450px;
+          }
+          #footer{
+            border-top: 1px solid gray;
+            font-family: 'NEXON Lv1 Gothic OTF';
+            padding: 20px;
+          }
+          #footer .list-line{
+            font-size: 18px;
+            list-style-type: none;
+            text-align: center;
+            margin: 40px;
+          }
+          #footer .isnut-sns{
+            list-style-type: none;
+            text-align: right;
+          }
+          #footer .isnut-sns li{
+            display: inline;
+          }
