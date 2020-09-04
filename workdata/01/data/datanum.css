@@ -127,18 +127,20 @@ nav{
   background-image: url("");
   background-size:  cover;
   background-repeat: no-repeat;
+  position: relative;
+  left: 55px;
  }
 
  /* button */
-#back_btn{
-  border: none;
-  width: 50px;
-  height: 50px;
-  margin: 30px 30px 30px 30px;
-  float: right;
-  position: relative;
-  top: -75px;
-}
+ #back_btn{
+   border: none;
+   width: 50px;
+   height: 50px;
+   margin: 30px 30px 30px 30px;
+   float: right;
+   position: relative;
+   top: -75px;
+ }
  .top_button{
    text-align: center;
  }
@@ -164,44 +166,44 @@ nav{
    font-family: 'GmarketSansBold';
  }
 
-/*content*/
-iframe{
-  position: relative;
-  margin-left: 28%;
-}
-.text_content{
-  position: relative;
-  margin-left: 28%;
-  margin-bottom: 30px;
-  overflow-x: hidden;
-}
-#up_title{
-  font-family: 'GmarketSansLight';
-  font-size: 28px;
-  position: relative;
-  top: 20px;
-  overflow-x: hidden;
-}
-#up_people{
-  font-family: 'GmarketSansLight';
-  font-size: 15px;
-  position: relative;
-  top: 20px;
-  color: #787878;
-  overflow-x: hidden;
-}
-#up_intent{
-  font-family: 'GmarketSansLight';
-  font-size: 20px;
-  position: relative;
-  top: 20px;
-  color: #787878;
-  overflow-x: hidden;
-}
-.comment{
-  position: relative;
-  left: -400px;
-}
+ /*content*/
+ iframe{
+   position: relative;
+   margin-left: 28%;
+ }
+ .text_content{
+   position: relative;
+   margin-left: 28%;
+   margin-bottom: 30px;
+   overflow-x: hidden;
+ }
+ #up_title{
+   font-family: 'GmarketSansLight';
+   font-size: 28px;
+   position: relative;
+   top: 20px;
+   overflow-x: hidden;
+ }
+ #up_people{
+   font-family: 'GmarketSansLight';
+   font-size: 15px;
+   position: relative;
+   top: 20px;
+   color: #787878;
+   overflow-x: hidden;
+ }
+ #up_intent{
+   font-family: 'GmarketSansLight';
+   font-size: 20px;
+   position: relative;
+   top: 20px;
+   color: #787878;
+   overflow-x: hidden;
+ }
+ .comment{
+   position: relative;
+   left: -400px;
+ }
 
 /* footer */
 footer{
