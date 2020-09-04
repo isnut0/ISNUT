@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title> ISNUT | POST(WORK) </title>
+  <title> ISNUT | POST </title>
   <link rel="stylesheet" href="datanum.css" type="text/css">
   <meta name="keywords" contents="영상, 영상제작, 동아리, 이즈넛, ISNUT, isnut"/>
   <meta name="description" content="ISNUT in SEOUL NATIONAL UNIVERSITY OF SCIENCE AND TECHNOLOGY"/>
@@ -19,96 +19,52 @@
     $("a").removeClass("active_a");
     $(name).addClass("active_a");
   }
-  function goBack(){
-    window.history.back();
-  }
   </script>
 
-  <nav class="menu" style = "padding: 3%">
-    <div><a href="../main/main.html" class="menu_title">ISNUT</a></div>
-    <ul>
-      <li><a href="about.html" class="menu_list">ABOUT</a></li>
-      <li><a href="../work/work.html" class="menu_list">WORK</a></li>
-      <li><a href="../" class="menu_list">NEWS</a></li>
-      <li><a href="../people/people.html" class="menu_list">PEOPLE</a></li>
-    </ul>
-  </nav>
-
-  <div class="title-design">
-    <div>
-      <input id="back_btn"  type="image" src="source\goback.png" onclick="goBack()";/>
+    <div class="title-design">
+      <h1 class = title>WORK</h1>
     </div>
-    <h1 class = title>WORK</h1>
-  </div>
-
-  <section class="work_page" style="margin-top: 5%;">
-    <div class = "top_button">
-      <ul>
-        <li><a href="index.html" class="active_a" onclick="classchange(this)">영상제</a></li>
-        <li><a href="award.html" onclick="classchange(this)">공모전</a></li>
-        <li><a href="video.html" onclick="classchange(this)">자유영상</a></li>
-        <li><a href="assign.html" onclick="classchange(this)">과제</a></li>
-      </ul>
-    </div>
-
-    <div class="video">
-      <iframe id="video" width="700" height="400"
-      src="https://www.youtube.com/embed/IobRvf9uCfw?controls=2&amp;rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
-    </iframe>
-
-    <div class="text_content">
-      <nav><h3 id="up_title"><strong>설화수 광고 #아름다움은 자란다 종합편</strong></h3></nav>
-      <p id="up_people">제일기획</p>
-      <p id="up_intent">
-        당신이 몇 살이든
-        <br>무엇을 하든
-        <br>지금의 당신이 가장 아름답다는 믿음은
-        <br>언제나 옳다
-        <br><br></p>
+    <section class="work_page" style="margin-top: 5%;">
+      <div class = "top_button">
+        <ul>
+          <li><a href="index.html" class="active_a" onclick="classchange(this)">영상제</a></li>
+          <li><a href="award.html" onclick="classchange(this)">공모전</a></li>
+          <li><a href="video.html" onclick="classchange(this)">자유영상</a></li>
+          <li><a href="assign.html" onclick="classchange(this)">과제</a></li>
+        </ul>
       </div>
-    </div>
+      <div class="video">
+        <iframe id="video" width="700" height="400"
+        src="https://www.youtube.com/embed/IobRvf9uCfw?controls=2&amp;rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" ></iframe>
 
-  </section>
+        <div class="text_content">
+          <h3 id="up_title">영상 제목은 여기에 ... </h3>
+          <p id="up_people">만든 사람</p>
+          <p id="up_intent">기획 의도<br>두 줄<br><br></p>
+        </div>
+        <div style="margin: 5%" class="comment">
+          <div id="disqus_thread"></div>
+          <script>
 
-  <div class="comment">
-    <div id="disqus_thread"></div>
-    <script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  */
-  (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://isnut.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
+          /**
+          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+          /*
+          var disqus_config = function () {
+          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://isnut.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-<footer>
-  <div id="footer" class="footer">
-    <div class="footer-area">
-      <ul class="isnut-sns">
-        <li><a href="https://www.facebook.com/snut.i.7/about" target="blank"> <img alt="facebook" src="source\fb.png" style="width:5%;"></a></li>
-        <li><a href="https://cafe.naver.com/isnut" target="blank"> <img alt="Naver" src="source\blog.png" style="width:5%;"></a></li>
-        <li><a href="http://isnut.cyworld.com" target="blank"> <img alt="Nate" src="source\nate.png" style="width:5%;"></a></li>
-        <li><a href="https://www.youtube.com/" target="blank"> <img alt="Youtube" src="source\youtube.png" style="width:5%;"></a></li>
-      </ul>
-      <ul class="list-line">
-        <li>E-mail : 국장/부국장 메일</li>
-        <li>Site by 김지원 유은영 정해정</li>
-      </ul>
-      <!-- <a href="#" class="page-top" style="display: block;">Top</a> -->
     </div>
   </div>
-</footer>
-
 </body>
 </html>
