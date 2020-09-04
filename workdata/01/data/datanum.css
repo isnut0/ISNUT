@@ -202,3 +202,33 @@ iframe{
   position: relative;
   left: -400px;
 }
+
+/* footer */
+footer{
+  position: relative;
+  transform: translateY(0%);
+}
+.wrapper{
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 182px;
+  margin-bottom: 1450px;
+}
+#footer{
+  border-top: 1px solid gray;
+  font-family: 'NEXON Lv1 Gothic OTF';
+  padding: 20px;
+}
+#footer .list-line{
+  font-size: 18px;
+  list-style-type: none;
+  text-align: center;
+  margin-top: 40px;
+}
+#footer .isnut-sns{
+  list-style-type: none;
+  text-align: right;
+}
+#footer .isnut-sns li{
+  display: inline;
+}
