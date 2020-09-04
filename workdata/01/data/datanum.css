@@ -130,6 +130,15 @@ nav{
  }
 
  /* button */
+#back_btn{
+  border: none;
+  width: 50px;
+  height: 50px;
+  margin: 30px 30px 30px 30px;
+  float: right;
+  position: relative;
+  top: -75px;
+}
  .top_button{
    text-align: center;
  }
