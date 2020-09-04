@@ -19,6 +19,9 @@
     $("a").removeClass("active_a");
     $(name).addClass("active_a");
   }
+  function goBack(){
+    window.history.back();
+  }
   </script>
     <nav class="menu" style = "padding: 3%">
       <div><a href="../main/main.html" class="menu_title">ISNUT</a></div>
@@ -31,6 +34,9 @@
     </nav>
   
     <div class="title-design">
+      <div>
+        <input id="back_btn"  type="image" src="goback.png" onclick="goBack()";/>
+      </div>
       <h1 class = title>WORK</h1>
     </div>
     <section class="work_page" style="margin-top: 5%;">
